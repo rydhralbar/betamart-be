@@ -4,7 +4,10 @@
   "description": "BetaMart is a shopping application that sells household necessities, electronics and others.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx standard",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/rydhralbar/betamart-be#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "nodemon": "^3.0.1"
   }
