@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "id": "f5dbf6a1-d1e8-4fd7-bbdb-1e85354229d6",
+      "name": "Battery",
+      "quantity": 1,
+      "category": "Electronic",
+      "rack_id": 2,
+      "price": 5000
+    },
+    {
+      "id": "eb0e8078-5db1-43b0-8554-e725269690ed",
+      "name": "Milk",
+      "quantity": 1,
+      "category": "Drink",
+      "rack_id": 3,
+      "price": 3500
+    },
+    {
+      "id": "c4284171-bec1-4ba4-a6ae-fcd4594512be",
+      "name": "Noodle",
+      "quantity": 1,
+      "category": "Food",
+      "rack_id": 1,
+      "price": 3500
+    }
+  ],
+  "racks": [
+    {
+      "rack_id": 1,
+      "category": "Food",
+      "capacity": 10,
+      "products": [
+        {
+          "id": "c4284171-bec1-4ba4-a6ae-fcd4594512be",
+          "name": "Noodle",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "rack_id": 2,
+      "category": "Electronic",
+      "capacity": 10,
+      "products": [
+        {
+          "id": "f5dbf6a1-d1e8-4fd7-bbdb-1e85354229d6",
+          "name": "Battery",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "rack_id": 3,
+      "category": "Drink",
+      "capacity": 10,
+      "products": [
+        {
+          "id": "eb0e8078-5db1-43b0-8554-e725269690ed",
+          "name": "Milk",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
