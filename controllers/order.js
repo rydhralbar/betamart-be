@@ -8,19 +8,24 @@ const addOrder = (req, res) => {
     const { productId, productName, quantity } = req.body
 
     const dataRegistered = fs.readFileSync(dbJson, unicode)
-    const data = JSON.parse(dataRegistered)
-    const filterProduct = data?.products?.filter((item) => {
-      if (item?.name.toLowerCase() === productName.toLowerCase()) {
-      }
-    })
-
+    let data = JSON.parse(dataRegistered)
+    const dataProduct = data?.products
+    const filterProduct = data?.products?.filter(
+      (item) => item?.id === productId
+    )
     if (data.length === 0) {
       res
         .status(401)
         .json({ status: false, message: 'Product stock is out of stock' })
     }
 
-    const checkData = filterProduct[0]
+    data['products'].filterProduct = {
+      id: filterProduct?.productId ?? productId,
+      name: filterProduct?.name ?? productName,
+      quantity: filterProduct?.quantity - quantity
+    }
+
+    const add = fs.writeFileSync(dbJson, JSON.stringify(data), unicode)
 
     res.status(201).json({
       status: true,
