@@ -1,5 +1,5 @@
-const express = require('express')
 const { addRack, getRack } = require('../controllers/racks')
+const express = require('express')
 const router = express.Router()
 
 // Add rack to json/db

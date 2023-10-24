@@ -1,7 +1,6 @@
 const uuid = require('crypto')
 const fs = require('fs')
 const unicode = 'utf-8'
-
 const dbJson = './db/db.json'
 
 const addProduct = (req, res) => {

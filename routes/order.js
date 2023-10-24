@@ -1,5 +1,5 @@
+const { addOrder } = require('../controllers/order')
 const express = require('express')
-const { addOrder, updateQty } = require('../controllers/order')
 const router = express.Router()
 
 // Add order

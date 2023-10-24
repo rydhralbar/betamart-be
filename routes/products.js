@@ -1,8 +1,4 @@
-const {
-  getProducts,
-  addProduct,
-  getLimitProduct
-} = require('../controllers/products')
+const { getProducts, addProduct } = require('../controllers/products')
 const express = require('express')
 const router = express.Router()
 
@@ -10,6 +6,6 @@ const router = express.Router()
 router.post('/add', addProduct)
 
 // Get product from json/db
-router.get('/:limit?', getProducts)
+router.get('/:search?', getProducts)
 
 module.exports = router
