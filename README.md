@@ -1,14 +1,23 @@
 # betamart-be
+
 BetaMart is a shopping application that sells household necessities, electronics and others.
 
 ## How to run this code
 
-- clone this repository
+To run this code, run the following command
+
+```bash
+    git clone https://github.com/rydhralbar/betamart-be.git
 ```
-git clone https://github.com/rydhralbar/betamart-be.git
+
+```bash
+  npm install or npm i
 ```
-- npm install
+
+```bash
+  npm run dev
 ```
-npm install or npm i
-```
-- Type ` npm run dev` to Start
+
+## Endpoint documentation by Postman
+
+[Documentation](https://documenter.getpostman.com/view/21942919/2s9YRCWWPi)
